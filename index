@@ -1,7 +1,7 @@
 
 var http=require('http');
 var fs=require('fs');
-var io=require('socket.io');
+var io=require('socket.io');   
 var mysql=require('mysql');
 var httpServer=http.createServer(function (request, response){
 	fs.readFile('www'+request.url, function (err, data){
